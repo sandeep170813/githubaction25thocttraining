@@ -1,1 +1,8 @@
-
+name: myfirstworkflow
+on: workflow_dispatch
+jobs:
+ firstjob:
+  runs-on: ubuntu-latest
+  steps:
+   - name: myfirstcommand
+     run:  echo "githubaction training"

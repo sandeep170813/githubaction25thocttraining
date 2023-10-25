@@ -6,3 +6,8 @@ jobs:
   steps:
    - name: myfirstcommand
      run:  echo "first build"
+ Deploy:
+  runs-on: ubuntu-latest
+  steps:
+   - name: myfirstcommand
+     run:  echo "first deploy"    

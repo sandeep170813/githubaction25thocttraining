@@ -10,7 +10,7 @@ jobs:
   steps:
    - name: myfirstcommand
      run:  sleep 10s
- Deploy1234:
+ Deploy12345:
   needs: Build 
   runs-on: ubuntu-latest
   steps:

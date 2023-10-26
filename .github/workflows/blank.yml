@@ -1,8 +1,8 @@
 name: myfirstworkflow
 on:
- push:
-   branches: 
-    - production
+ pull_request:
+  types: 
+   - opened    
  workflow_dispatch:    
 jobs:
  Build:

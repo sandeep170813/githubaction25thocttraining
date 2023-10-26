@@ -1,5 +1,6 @@
 name: myfirstworkflow
 on:
+ push: 
  pull_request:
   types: 
    - opened

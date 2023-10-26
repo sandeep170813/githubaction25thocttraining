@@ -1,8 +1,9 @@
 name: myfirstworkflow
 on:
- push:
-   branches: 
-    - production
+ pull_request:
+  types: 
+   - opened
+   - closed     
  workflow_dispatch:    
 jobs:
  Build:
@@ -10,7 +11,7 @@ jobs:
   steps:
    - name: myfirstcommand
      run:  sleep 10s
- Deploy1234:
+ Deploy12345:
   needs: Build 
   runs-on: ubuntu-latest
   steps:
